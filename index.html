@@ -1,0 +1,253 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ReWear</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f4f7f6;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #1b5e20, #43a047);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd47') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-box {
+    background: rgba(0,0,0,0.6);
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+}
+
+.hero p {
+    margin: 15px 0;
+}
+
+.btn {
+    background: #66bb6a;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2e7d32;
+}
+
+/* SECTION */
+.section {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #2e7d32;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.stat h2 {
+    color: #2e7d32;
+    font-size: 2em;
+}
+
+/* CTA */
+.cta {
+    background: linear-gradient(135deg, #2e7d32, #66bb6a);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png">
+        <span>ReWear</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="como-funciona.html">Como Funciona</a>
+        <a href="impacto.html">Impacto</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-box">
+        <h1>ReWear</h1>
+        <p>Transforme seu guarda-roupa e ajude o planeta 🌱</p>
+        <a href="como-funciona.html" class="btn">Começar</a>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="title">O que você pode fazer</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🔄 Trocar</h3>
+            <p>Troque roupas com pessoas próximas.</p>
+        </div>
+
+        <div class="card">
+            <h3>💰 Vender</h3>
+            <p>Ganhe dinheiro com peças que não usa.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎁 Doar</h3>
+            <p>Ajude quem precisa.</p>
+        </div>
+
+        <div class="card">
+            <h3>👕 Comprar</h3>
+            <p>Moda sustentável e barata.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="title">Nosso impacto</h2>
+
+    <div class="stats">
+        <div class="stat">
+            <h2>+10k</h2>
+            <p>Roupas reutilizadas</p>
+        </div>
+
+        <div class="stat">
+            <h2>+5k</h2>
+            <p>Usuários</p>
+        </div>
+
+        <div class="stat">
+            <h2>80%</h2>
+            <p>Menos desperdício</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Faça parte da mudança</h2>
+    <p>Junte-se à ReWear hoje mesmo</p>
+</section>
+
+<footer>
+    <p>© 2026 ReWear</p>
+</footer>
+
+</body>
+</html>
+```

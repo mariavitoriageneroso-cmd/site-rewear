@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre - ReWear</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f5f7f6;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #2e7d32, #66bb6a);
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+}
+
+.logo-circle::after {
+    content: "♻";
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    background: url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b') no-repeat center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.55);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+}
+
+/* CONTAINER */
+.container {
+    padding: 60px 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2e7d32;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+/* ABOUT TEXT */
+.about {
+    text-align: center;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* FOOTER */
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVO */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <div class="logo-circle"></div>
+        ReWear
+    </div>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="como-funciona.html">Como Funciona</a>
+        <a href="impacto.html">Impacto</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Sobre a ReWear</h1>
+        <p>Transformando a moda em algo sustentável 🌱</p>
+    </div>
+</section>
+
+<!-- SOBRE TEXTO -->
+<section class="container">
+    <h2 class="section-title">Nossa História</h2>
+
+    <div class="about">
+        <p>
+            A ReWear nasceu com o objetivo de combater o desperdício na indústria da moda
+            e incentivar um consumo mais consciente.
+        </p>
+        <br>
+        <p>
+            Acreditamos que roupas não deveriam ser descartadas facilmente, mas sim reutilizadas,
+            trocadas e compartilhadas entre pessoas.
+        </p>
+    </div>
+</section>
+
+<!-- MISSÃO / VISÃO / VALORES -->
+<section class="container">
+    <h2 class="section-title">O que nos move</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🌍 Missão</h3>
+            <p>Reduzir o desperdício têxtil e promover a moda sustentável.</p>
+        </div>
+
+        <div class="card">
+            <h3>👁️ Visão</h3>
+            <p>Ser a principal plataforma de moda consciente no Brasil.</p>
+        </div>
+
+        <div class="card">
+            <h3>💚 Valores</h3>
+            <p>Sustentabilidade, comunidade e consumo responsável.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 ReWear - Moda Sustentável</p>
+</footer>
+
+</body>
+</html>
